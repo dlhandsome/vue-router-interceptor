@@ -1,0 +1,7 @@
+extends: standard
+
+globals:
+  __VERSION__: false
+
+rules:
+  no-tabs: 0

@@ -1,0 +1,58 @@
+{
+  "name": "vue-router-interceptor",
+  "version": "1.0.0",
+  "description": "Effortlessly interceptor your router",
+  "main": "dist/vue-router-interceptor.common.js",
+  "module": "dist/vue-router-interceptor.esm.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "node scripts/build.js",
+    "lint": "./node_modules/.bin/eslint src test",
+    "test:unit": "./node_modules/mocha/bin/mocha --compilers js:babel-core/register",
+    "test": "npm run lint && npm run test:unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dlhandsome/vue-router-interceptor.git"
+  },
+  "keywords": [
+    "vue-router",
+    "vue",
+    "interceptor"
+  ],
+  "author": "dlhandsome",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dlhandsome/vue-router-interceptor/issues"
+  },
+  "homepage": "https://github.com/dlhandsome/vue-router-interceptor#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "eslint": "^4.13.1",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^4.0.1",
+    "rollup": "^0.50.0",
+    "rollup-plugin-buble": "^0.16.0",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-copy": "^0.2.3",
+    "rollup-plugin-json": "^2.3.0",
+    "rollup-plugin-node-resolve": "^3.0.2",
+    "rollup-plugin-replace": "^2.0.0",
+    "uglify-js": "^3.1.10",
+    "vue-router": "^3.0.1"
+  },
+  "peerDependencies": {
+    "vue-router": "^3.0.0"
+  },
+  "dependencies": {
+    "koa-compose": "^4.0.0"
+  }
+}
