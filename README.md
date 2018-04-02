@@ -1,6 +1,6 @@
 # vue-router-interceptor
 
-[![travis-ci](https://travis-ci.org/dlhandsome/vue-router-interceptor.svg?branch=master)](https://www.travis-ci.org/we-plugin/we-cropper)
+[![travis-ci](https://travis-ci.org/dlhandsome/vue-router-interceptor.svg?branch=master)](https://www.travis-ci.org/dlhandsome/vue-router-interceptor)
 [![npm-version](https://img.shields.io/npm/v/vue-router-interceptor.svg)](https://www.npmjs.com/package/we-cropper)
 
 帮你轻松管理路由的轻型拦截器
