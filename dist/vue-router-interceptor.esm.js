@@ -1,5 +1,5 @@
 /*!
-  * vue-router-interceptor v1.0.0
+  * vue-router-interceptor v1.0.1
   * (c) 2018 Sail <awsomeduan@gmail.com>
   * @license MIT
   */
@@ -105,15 +105,16 @@ ModuleManage.prototype.listen = function listen () {
     var this$1 = this;
 
   this.router.beforeEach(function (to, from, next) {
-    to.matched.some(function ($route) { return $route.meta[this$1.moduleName]; }) &&
-    this$1.callback({ to: to, from: from, router: this$1.router }, next);
+    to.matched.some(function ($route) { return $route.meta[this$1.moduleName]; })
+      ? this$1.callback({ to: to, from: from, router: this$1.router }, next)
+      : next();
   });
 };
 
 var index = {
   Create: VueRouterInterceptor,
   RegisterModule: ModuleManage,
-  version: '1.0.0'
+  version: '1.0.1'
 };
 
 export default index;

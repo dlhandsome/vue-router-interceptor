@@ -30,8 +30,6 @@ requireAuth.use(middleware)
 requireAuth.listen()
 ```
 
-更多细节请查阅 [在线文档](https://dlhandsome.github.io/vue-router-interceptor/)
-
 ## Lisence
 
 MIT

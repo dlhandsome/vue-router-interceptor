@@ -44,8 +44,9 @@ class ModuleManage {
 
   listen () {
     this.router.beforeEach((to, from, next) => {
-      to.matched.some($route => $route.meta[this.moduleName]) &&
-      this.callback({ to, from, router: this.router }, next)
+      to.matched.some($route => $route.meta[this.moduleName])
+        ? this.callback({ to, from, router: this.router }, next)
+        : next()
     })
   }
 }

@@ -1,6 +1,6 @@
 {
   "name": "vue-router-interceptor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Effortlessly interceptor your router",
   "main": "dist/vue-router-interceptor.common.js",
   "module": "dist/vue-router-interceptor.esm.js",
