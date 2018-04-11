@@ -19,7 +19,7 @@ npm install vue-router-interceptor --save-dev
 import router from 'router'
 import VueRouterInterceptor from 'vue-router-interceptor'
 
-const interceptor = VueRouterInterceptor.Create(router)
+const interceptor = new VueRouterInterceptor.Create(router)
 const requireAuth = interceptor.register('requireAuth')
 
 function middlewre () {
